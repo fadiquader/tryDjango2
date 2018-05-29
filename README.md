@@ -40,7 +40,7 @@ mkdir settings && cd settings
 ```
 create __init__.py
 
-# put inside
+// put inside
 
 from .base import *
 
@@ -55,7 +55,7 @@ except:
 Change BASE_DIR in settings.py:
 ```
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-# to
+// to
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 ```
 move settings.py to settings/base.py
@@ -65,14 +65,14 @@ copy base.py to local.py
 
 Some other common installations (optional):
 ```
-# for a postgresql database
+// for a postgresql database
 pip install psycopg2
 
-# for a mysql database
+// for a mysql database
 pip install mysqlclient #python3
 pip install MySQL-python #python2
 
-# for use on heroku
+// for use on heroku
 pip install gunicorn dj-database-url
 
 pip install django-crispy-forms
