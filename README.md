@@ -9,7 +9,8 @@ mkdir projectName && cd projectName
 ```
 virtualenv -p python3 .
 ```
-# activate on Mac/Linux
+
+activate on Mac/Linux
 
 ```
 source bin/activate
