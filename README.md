@@ -38,6 +38,7 @@ cd projectName
 ```
 mkdir settings && cd settings
 ```
+```
 create __init__.py
 
 // put inside
