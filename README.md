@@ -7,7 +7,7 @@ mkdir projectName && cd projectName
 ```
 
 ```
-virtualenv -p python3 .
+virtualenv -p python3 env
 ```
 
 activate on Mac/Linux
@@ -85,9 +85,22 @@ Create requirements.txt file
 ```
 pip freeze > requirements.txt
 ```
+if you have project with requirements.txt, you can install dependencies
+```
+pip3 install -r requirements.txt
+```
 
 Run Migration & Createsuperuser
 ```
 python manage.py migrate
 python manage.py createsuperuser
 ```
+create bin/run.sh
+```
+sudo chmod +x run.sh
+```
+```
+source env/bin/activate
+cd src
+python manage.py runserver
+``
